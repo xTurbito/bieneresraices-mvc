@@ -1,0 +1,29 @@
+{
+  "name": "bienesraices_mvc",
+  "version": "1.0.0",
+  "description": "Mi Primer proyecto con Node.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "keywords": [
+    "MCV",
+    "Pug",
+    "Tailwind",
+    "Sequelize",
+    "MySQL"
+  ],
+  "author": "Miguel Alcocer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "i": "^0.3.7",
+    "npm": "^10.7.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
