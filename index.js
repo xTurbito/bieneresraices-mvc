@@ -15,7 +15,9 @@ app.use('/auth', usuariosRoutes);
 app.set('view engine', 'pug');
 app.set('views', './views');
 
-
+//Carpeta Pública
+//Aqui  se almacenan los archivos estáticosvv
+app.use(express.static('public'));
 
 //Definir un puerto y arrancar el servidor
 const port = 3000;

@@ -10,12 +10,19 @@ block contenido
             .bg-white.py-8.px-4.shadow
                 form.space-y-5
                     div 
+                        label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="nombre") Tu Nombre
+                        input#nombre.w-full.px-3.py-4.border.borde-gray-300.rounded.mb.placeholder-gray-400(type="text", name="nombre", placeholder="Tu Nombre")
+                    div 
                         label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="email") Email de Registro
                         input#email.w-full.px-3.py-4.border.borde-gray-300.rounded.mb.placeholder-gray-400(type="email", name="email", placeholder="Tu Email")    
                     div 
                         label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="password") Password
                         input#password.w-full.px-3.py-4.border.borde-gray-300.rounded.mb.placeholder-gray-400(type="password", name="password", placeholder="Tu Password")
+                    div 
+                        label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="repeatPassword") Repetir Password
+                        input#repeatPassword.w-full.px-3.py-4.border.borde-gray-300.rounded.mb.placeholder-gray-400(type="password", name="repeatPassword", placeholder="Repite tu Password")
                     .flex.items-center.justify-between 
-                        a.text-gray-500.text-xs(href="/auth/registro") ¿No tienes cuenta? Registrate
+                        a.text-gray-500.text-xs(href="/auth/login") ¿Ya tienes cuenta?
                         a.text-gray-500.text-xs(href="/auth/olvide-password") ¿Olvidaste tu Password?
-                    input(type="submit" value="Iniciar Sesión" class="bg-indigo-600 hover:bg-indigo-700 w-full mt-5 p-2 text-white uppercase font-bold rounded cursor-pointer")
+
+                    input(type="submit" value="Crear Cuenta" class="bg-indigo-600 hover:bg-indigo-700 w-full mt-5 p-2 text-white uppercase font-bold rounded cursor-pointer")
